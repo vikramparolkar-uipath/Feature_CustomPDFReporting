@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Sym 620 - Symitar Quest - ",
+  "Type": "App",
+  "Id": "luJ1iszjfEK9fycph5t2mg",
+  "Reference": "PtqAHEoChk6gkcYWF0fANA/luJ1iszjfEK9fycph5t2mg",
+  "Created": "2024-06-27T15:53:08.7044299Z",
+  "Updated": "2024-06-27T15:53:08.7044299Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "DisplayName": "Test Set Reporting",
+  "Tooltip": "CONFIGURATION\n> in_ProjectPrefix - provide the Project Prefix in Test Manager\n> in_TestSetName - provide the Test Set name in Test Manager\n> in_TestExecutionName (optional) - provide the name of a Test Execution. If not provided, the latest Finished test execution will be used\n",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_ProjectPrefix",
+      "DisplayName": "in_ProjectPrefix",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "DEV",
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_TestSetName",
+      "DisplayName": "in_TestSetName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "TS_Regression",
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_TestExecutionName",
+      "DisplayName": "in_TestExecutionName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

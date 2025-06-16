@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Episys (Jack Henry)",
+  "Type": "Screen",
+  "Id": "hlMjItAXWkGp-L0qNp7Ueg",
+  "Reference": "PtqAHEoChk6gkcYWF0fANA/hlMjItAXWkGp-L0qNp7Ueg",
+  "ParentRef": "PtqAHEoChk6gkcYWF0fANA/AxFbyXyNuU-clMF0SsJFfQ",
+  "Created": "2024-06-27T15:53:44.4234434Z",
+  "Updated": "2024-06-27T15:56:28.8652059Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

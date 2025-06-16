@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://staging.uipath.com/uibank/developmenttenant/testmanager_",
+  "defaultProject": {
+    "id": "90771ab5-3071-0000-4859-0b46f7818900",
+    "name": "FINS (Episys and FICS)",
+    "key": "FINS"
+  }
+}

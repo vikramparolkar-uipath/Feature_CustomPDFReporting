@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge: downloadscreenshot (7680×2400)",
+  "Type": "App",
+  "Id": "QdQud6A8qEKAOjLNLBW2dA",
+  "Reference": "PtqAHEoChk6gkcYWF0fANA/QdQud6A8qEKAOjLNLBW2dA",
+  "Created": "2025-06-13T06:27:57.3106222Z",
+  "Updated": "2025-06-13T06:27:57.3106222Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
