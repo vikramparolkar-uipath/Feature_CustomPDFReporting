@@ -162,7 +162,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="CONFIGURATION&#xA;&gt; in_ProjectPrefix - provide the Project Prefix in Test Manager&#xA;&gt; in_TestSetName - provide the Test Set name in Test Manager&#xA;&gt; in_TestExecutionName (optional) - provide the name of a Test Execution. If not provided, the latest Finished test execution will be used&#xA;" DisplayName="Test_Set_Reporting" sap:VirtualizedContainerService.HintSize="1343,15095" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="CONFIGURATION&#xA;&gt; in_ProjectPrefix - provide the Project Prefix in Test Manager&#xA;&gt; in_TestSetName - provide the Test Set name in Test Manager&#xA;&gt; in_TestExecutionName (optional) - provide the name of a Test Execution. If not provided, the latest Finished test execution will be used&#xA;" DisplayName="Test_Set_Reporting" sap:VirtualizedContainerService.HintSize="1499,21277" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="uiascb1:ApiV2Testsets[]" Name="List_TestSets" />
       <Variable x:TypeArguments="x:String" Name="ProjectID" />
@@ -196,33 +196,46 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="ERROR HANDLING - Ensure Project ID is provided" sap:VirtualizedContainerService.HintSize="693,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="ERROR HANDLING - Ensure Project ID is provided" sap:VirtualizedContainerService.HintSize="693,1121" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACo1UbU/bMBD+K5E/bVIIJd0mUYkPNBTabYyIFjZpQshNjtZLYmf2OWtX9b/vkrhQoBVTPzS+Nz/Pc3desXMBeWoiJZELCZr1VmwMXCdzPs2hdbLezzufDbm5keJBQDpZlkBG1BZ8NpKlxce4FfvGC2A9Vmr1CxKMNTyIBfPZmTBlzpfOG7/0gkm0KFEoSd7JHLyX+fWd5DKohZzR+Rp+W6Eh3cBoEHxVCXc1Yo5zChuZS8C5SmOu6Was+dXxa+JzZXEn8s8C76vw3gEw9LGTwmkpbkPHw+wh8oT7RtSAgpFEmOkG4xh0JRIIThMUlUABJhh/H0hsP6Pj435/MAijQbgDTNC3Ms0heO3xvV2Zgcwusx/dRSWHw6ML3cWs+wkqlXd97xa0ITQnR0Gn/lG+zdFqOJFgUfPc92I7zUXyBZYTlYE8kTbPnf5gkPUeeG5I/2swpZIG9vWjVZsSr2TEZcWf5seQ4E20a43/2AmRvlJ9dLZzWhrzyxE5V7rghJBZ21R6C/LmHFnq0P7J2sNkfbf22faCRKooKYe26GlVDHKZwOMwUuqKuQ5Q5aYHVJiWUVJPlSbRyZxYg6o4sGLKZUZ/VHWORKTgks9oon3mZmjpFNgQIIjTejicdjuHeohYtitCEReA/eUoZcSkJpyLv5BuarsiFOK5qW9Vj3gyB9JHZba85TkpTKTWG3tfqz8G9AihcPZYi4LrJVFz70rMk4x4bMtw9CHoHEwBeRB2wo+dkM7hti4OS7tU3oS08C5bMbx3Z1BBrsoCJJJHconvt1OfXdNt5G5F+p/tflvOqxLa9aaAa6BJJDSvVB5MyNQ8UD12WIWHmzL0UZc5XD17/NYU/JXLmSV+lACSzpd8EdNxTA1ivbDTaV7nvgae0ehHc4qu2+DmfAIL7OcqyRrB1/8AvBTID/MFAAA=" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Project ID" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="bb5889dd-2662-3faa-940d-9370f7118e6a">
-          <isactr:ConnectorActivity.FieldObjects>
-            <isactr:FieldObject Name="projectPrefix" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <InArgument x:TypeArguments="x:String">[in_ProjectPrefix]</InArgument>
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-            <isactr:FieldObject Name="Jit_v2_projects_prefix" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <OutArgument x:TypeArguments="uiascb:v2_projects_prefix" />
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-            <isactr:FieldObject Name="out_id" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <OutArgument x:TypeArguments="x:String">[ProjectID]</OutArgument>
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-          </isactr:ConnectorActivity.FieldObjects>
-        </isactr:ConnectorActivity>
+        <Sequence sap2010:Annotation.AnnotationText="API EndPoint - {BaseURL}/v2/projects/prefix/{projectPrefix}&#xA;Input Parameters - Project Prefix (in_ProjectPrefix)&#xA;Output Parameters - Project ID (ProjectID)" DisplayName="Get Project ID" sap:VirtualizedContainerService.HintSize="452,323" sap2010:WorkflowViewState.IdRef="Sequence_114">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACo1UbW/aMBD+K8ifNilNadgmFakfmpQWtrFGhXaTpqoyyZV4SezMPmcwxH/f5QVKW1AnPhDfm5/nuTuv2KWALDaBksiFBM36KzYBrqOEzzJonKz/895hQ25upXgUEE+XBZARtQWHjWRhcRu3Yt94DqzPCq1+QYShhkexYA67EKbI+LL1hi+9YCItChRKkneaQOdlfnUnuQxqIed0voHfVmiINzBqBF9VxNsaIceEwkZmDJioOOSabsaKXxW/Jj7XFvci/yzwofQeWgCGPvZSOC/EndfyMAeIPOG+FRUgdyQR5rrGOAFdigjc8whFKVCAcSffBxKbz+D01PcHAy8YeHvAuL6VcQbua4/T2ZfpynSc/ugtSjkcnlzpHqa9T1CqrOd07kAbQnN24narH+XbDK2GMwkWNc+cTmhnmYi+wHKqUpBn0mZZqz8YZP1HnhnS/wZMoaSBQ/1o1KbEaxlwWfKn+TEkeB3dtsbZdkLEr1QfXeydltr8ckQulc45IWTW1pXegrw5B5Y6dHiyDjBZ368dtrsggcoLyqEteloVg1xGsB1GSl2xtgNUue4BFaZllNRTpUl0MkfWoMqPrJhxmdIfVU2QiORc8jlNtMPaGVq2CmwIEMRZNRytdnuHeohYNCtCEVeA/nIUM2IS8CgBoq1SW9zxjIQjrFu7r9UfA3qEkLf2UIuc6yUhbp+LkEcpwdtld/LB7R7NALnrdb2PXY/O3i7dFmezK50pUeyMG46ddxdQQqaKHCSSR3KJ73dTn13Tq1VsuP/P0r6t0nUBzdZSwA3QgBGaV+INpmSq350+Oy69400Z+qjKHK+evWlrCv7K5dwSP0oASecxX4R0nIi/ZPK63frR9TXwlCY6SCi6akM7vlNYoJ+pKK0FX/8DyIGc0soFAAA=" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Project ID" sap:VirtualizedContainerService.HintSize="418,206" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="bb5889dd-2662-3faa-940d-9370f7118e6a">
+            <isactr:ConnectorActivity.FieldObjects>
+              <isactr:FieldObject Name="projectPrefix" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String">[in_ProjectPrefix]</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="Jit_v2_projects_prefix" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="uiascb:v2_projects_prefix" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="out_id" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="x:String">[ProjectID]</OutArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+            </isactr:ConnectorActivity.FieldObjects>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </isactr:ConnectorActivity>
+        </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
         <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
@@ -270,48 +283,56 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="452,25" sap2010:WorkflowViewState.IdRef="Sequence_76">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="452,89" sap2010:WorkflowViewState.IdRef="Sequence_76">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <TryCatch DisplayName="ERROR HANDLING - Ensure Test Set Name is provided" sap:VirtualizedContainerService.HintSize="693,57" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+    <TryCatch DisplayName="ERROR HANDLING - Ensure Test Set Name is provided" sap:VirtualizedContainerService.HintSize="693,1136" sap2010:WorkflowViewState.IdRef="TryCatch_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq2WbW/aMBDHv0rkV5uUUgjt1iL1RaFspaWDFeikTdVkkmvxCHZmn1kp4rvv8gCEBeimVbwA3/ns3/3vbDNnHwSEgWkoiVxI0Kw2Zz3g2h/xYQipk9W+3bvskpuBFA8Cgv4sAjKituCylowsrubN2Sc+AVZjSgeghzPmsgthopDPMntnbQfjaxGhUJLs/RE465h4BzIa1EI+0rinNCaRrFZ1U+S28nkW+9mCjqNa5gZwpIIu17QZxrNjxoW7ooq0+gE+iqDA1c17CmT5uD1sR6/A1trJ5uyHa70Ad+yyW/hphYZgWbs/YbscR3/FapIOKYCmjbMVchWxh/Ddbvk6ssHllK+77mXEsYiKgJmxiJc6MjghER5pzQ269/9TXFRFmL7azpLO3Ydy8ppC2SjgCMGWszrIewqY+bg9RT39d9nosulY3HqtXAn8fh6JO68PBg2gKUAXvBvga9aBiLu91Ir11QlZD/RU+FA6p4M+FSjAlHpfmhLTn43T03q92fQaTW+ToFS3MggpLG+kC9PZFlHqPc8uro/qlcFts3LcbV9VqyeX6H31XOcOtCGKs0qpHH8o3oZoNZxJsKh56DpdOwyFfw2zvhqDPJM2DFl6qGlXVnvgoaGK34KJlDSw65Cn0ibyk5qJN9cs9AgsF8i5FvcLl+Vv/4aaRLQgPRHrd8Aglz6sikl1m7MsKdo2SYt2pZdG0m2lNOVBZt8aVJMDK4ZcjumLVh0hpTPhkqd9n5VjltWtYaladIVRjwzja29H2S8Ro7S7yPkRkFECsQiheIZguWQWS26nLQw6nQcnXsLppWs0uD8Ckk6NbXTHQ1KZUlos7XWtfhnQLYRJZu9qMeF6RollT2aX+2PKIi9C5ahUPhgC8pJX9o7LHo29vCrLo5d0Z0pzk0rhvLmAKYQqmoBE8kgu8W0+dGObaiJ2KtH+A7JXxk4E6eEgXyxRQdlmn0zJu1Fjh1PvcL56jRaHcR2zddpcPlrKgmaBpPENf+rSsEfVYDWvXE7+XtQ18DFdII0RzY7Fzjq6D09YD5U/TmRd/AahJyh8tAgAAA==" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get List Of Test Sets" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="fc759ab7-370b-3f2e-b738-dd9119704f74">
-          <isactr:ConnectorActivity.FieldObjects>
-            <isactr:FieldObject Name="projectId" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-            <isactr:FieldObject Name="Jit_ApiV2Testsets" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <OutArgument x:TypeArguments="uiascb1:ApiV2Testsets[]">[List_TestSets]</OutArgument>
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-            <isactr:FieldObject Name="search" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <InArgument x:TypeArguments="x:String">[in_TestSetName]</InArgument>
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-            <isactr:FieldObject Name="top" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <InArgument x:TypeArguments="x:Int32" />
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-          </isactr:ConnectorActivity.FieldObjects>
-        </isactr:ConnectorActivity>
+        <Sequence sap2010:Annotation.AnnotationText="API EndPoint - {BaseURL}/v2/{projectId}/testsets&#xA;Input Parameters - Project ID (ProjectID)&#xA;    &gt; Search by Test Set Name (in_TestSetName)&#xA;Output Parameters - List of Test Sets (List_TestSets)" DisplayName="Get List of Test Sets" sap:VirtualizedContainerService.HintSize="452,338" sap2010:WorkflowViewState.IdRef="Sequence_115">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq2WbW/aMBCA/0rkT5uUphDarUXqh0LZSkcHK9BJm6rJJNfiEezMPrNSxH/f5aWQNkA3reID+M5nP/fiOxbsg4AoNE0lkQsJmtUXrA9cB2M+iiBTsvr3G5edczOU4lZAOJjHQELUFlzWlrHF1b4F+8ynwOpM6RD0aM5cdiZMHPF5Lu+u5WACLWIUSpJ8MAZnbZPcQEKDWsg7WveVxtSS1WtuhtxRAc9tv1jQiVXbXAKOVdjjmi7DZHfCuHRXVLFWPyFAEZa4ekVNiaxot4Pt4BXY2lvZnN1w7RfgDl12Bb+s0BA+5u45bI/j+K9YTVohJdCscDZCrix2EL7bHr6ubHI54+uqexlxIuIyYC4s42WKHE5IhDs68wnd+/9JLqoyzEBtZsn27kI5es1A2TjkCOGGtzosakqYRbsdST3+97BRs+la3NhWLgT+OI3FtT8AgwbQlKBL2ifga9ahSKrdayfx1SlZH/RMBOCd0kOfCRRgvP7XlsTsZ/P4uNFotfxmy39K4DWsDCMyKwqpYTqbLLz+w/zs00GjOrxqVQ97nYta7egc/W++61yDNkRxUvUqyYfsbYRWw4kEi5pHrtOzo0gEn2A+UBOQJ9JGEcseNd3K6rc8MpTxKzCxkga2PfIstGn4KZqptlAsNAQeDyioljdLlxW7f1NNYzqQRsR6DhjkMoBVMilvC5Y7RdembtGtNGkkdSulyQ8SB9agmu5ZMeJyQl906hjJnSmXPKv7PB3zPG9NS9miFkY1Mkra3pa0nyPGWXWR8iMgIweaPBgDhUJNbHzNI4oaIa7kDa1+G9BthGku72kx5XpOoPkI7PFgQlRFp6oHXmVvBMg9v+IfVnxa+0UvH59SWm1OAuhcZq45b85gBpGKpyCRNJJLfFs0fXJNLQ1e5vLugt8Zlm4MWbGTriOoap5HqjUgUToH6mx/5u8vVtNluZ/kJT+nw+WdJS9oF0haX/L7Hi374oFEfqWS/l1oaOATagjNMe1Ogp1X6ADusRGpYJKGdfkHmdoykIQIAAA=" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get List Of Test Sets" sap:VirtualizedContainerService.HintSize="418,206" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="fc759ab7-370b-3f2e-b738-dd9119704f74">
+            <isactr:ConnectorActivity.FieldObjects>
+              <isactr:FieldObject Name="projectId" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="Jit_ApiV2Testsets" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <OutArgument x:TypeArguments="uiascb1:ApiV2Testsets[]">[List_TestSets]</OutArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="search" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:String">[in_TestSetName]</InArgument>
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+              <isactr:FieldObject Name="top" Type="FieldArgument">
+                <isactr:FieldObject.Value>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </isactr:FieldObject.Value>
+              </isactr:FieldObject>
+            </isactr:ConnectorActivity.FieldObjects>
+          </isactr:ConnectorActivity>
+        </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
         <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_3">
@@ -319,11 +340,11 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_80">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,535" sap2010:WorkflowViewState.IdRef="Sequence_80">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If Condition="[in_TestSetName &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="418,475" sap2010:WorkflowViewState.IdRef="If_8">
@@ -359,11 +380,11 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_79">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="452,89" sap2010:WorkflowViewState.IdRef="Sequence_79">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </Sequence>
@@ -397,47 +418,55 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq1WbU8iMRD+K5t+uktWXhY1kcQPgqiceqCgXu5iLmV3dHss7doXlCP895tuF1gFUXOGD9CZzvSZ5+lMmZIjBkmkmoJryjhIUp+SHlAZxnSQgHOS+q9bn5xQdcXZHYOoP0kBjVoa8Embp0Yv9k3JdzoCUidCRiAHE+KTQ6bShE5ye2dpBxVKlmomONr7MXjLGHsCGpWWjN/juiekziJJveo7yGcipHnshQFpozq8SfmYLqGpc9CxiLpU4uHaRlvHzF+gTKX4A6FuRys4u87jsWgt1GLgBrCBTy7hwTAJ0RzUS/BdqmPyHqwqU2UFqBNrLchFxAaEtc+kUw1ZugowN67Cc44cHOMa7jHnM3Tbr6N7G40GpRWsE7fvPK+JWwzcQN3OZ1KnxSpzfWdbxSfe4m33/6Fhx3eMXtvb35j+fZCy68DyCE8QGnuGumE6VppqtVLIW5ufVbgs7YrZ5ii1bYUyq6MHcsxCKB2Emo2ZZqBKvZsW1+5nc2+v0Wi1gmYr2Iiv1DA8SjDLhj048bx1+UqqFf88r/2oHcdH1YfTw93jbRW0Lqq+dw1SYYr9aqliPxhuEm0k7HMwWtLE97pmkLDwFCZ9MQS+z02SEDcgEAOp39FEoSCXoFJEAq8NDKdK1gEoROYtaIlDfJ6g4JrdznxSnN5NMUoxIY745RzHunkIi3uAkk9JXhQem5WFp+JLwXHyCYl1oDk0SovRlmEDyof4hVlj2z8jyqm7lrlWk1zUpkEpcRzi9RrYEfq+K3KideruKe49Bk2wHstJwv5CND8hT4Vuz2byWvNUXvvQIqdhDMikGJr0miZIOlY4m9sbUjwqkG0No9zelWxE5QTrzF/ALg2HWFSRk+p2qbI1AE1LQSXYqQS4Dook5ZDcTXaozh0z3pdDGEMi0hFwi5dTrr8WQ58dU8u4d4x9qLc+QnInBddmuPWM4ZV8yXurj6bswaqT8jgoTxfP4KxsRV+mLT8W8p5Rfm+wZowCjutz+tTFZQ+1wyeyUsn+WzQk0CHO2GaMu600eTv04Uk3EhEOMxFm/wD/JKZwsQgAAA==" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Test Execution ID" sap:VirtualizedContainerService.HintSize="693,226" sap2010:WorkflowViewState.IdRef="ConnectorActivity_4" UiPathActivityTypeId="5abe4229-40c4-3b11-8bcc-5e98158254b3">
-      <isactr:ConnectorActivity.FieldObjects>
-        <isactr:FieldObject Name="projectId" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="Jit_ApiV2TestexecutionsWithstats" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <OutArgument x:TypeArguments="uiascb2:ApiV2TestexecutionsWithstats[]">[List_TestExecution]</OutArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="top" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:Int32" />
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="testsetId" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">[TestSetID]</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="orderby" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">created desc</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="search" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">[in_TestExecutionName]</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-      </isactr:ConnectorActivity.FieldObjects>
+    <Sequence sap2010:Annotation.AnnotationText="API EndPoint - {BaseURL}/v2/{projectId}/testexecutions/withstats&#xA;Input Parameters - Project ID (ProjectID), Test Set ID (TestSetID)&#xA;    &gt; Search by Test Execution Name (in_TestExecutionName)&#xA;    &gt; Order by Created Date (&quot;created desc&quot;)&#xA;Output Parameters - List of Test Executions (List_TestExecution)" DisplayName="Get Test Execution ID" sap:VirtualizedContainerService.HintSize="693,385" sap2010:WorkflowViewState.IdRef="Sequence_112">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </isactr:ConnectorActivity>
-    <Sequence DisplayName="Find First Completed Test Execution" sap:VirtualizedContainerService.HintSize="693,719" sap2010:WorkflowViewState.IdRef="Sequence_83">
+      <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq1WbU8iMRD+K6Sf7pJ1gUVNJPGDICqnHCiol7uYS9kd3R5Lu7ZTlCP895t9EVZB1JzhA3SmM32eeaZTZuxIQBSYppLIhQTN6jPWB679kA8jyJys/uvGYSfcXEpxKyAYTGMgI2oLDmvL2OJi34x952NgdaZ0AHo4ZQ47FCaO+DS3d5d2ML4WMQolyT4IobSMSU4go0Et5B2t+0pjGsnqVSeDfKZ8nseeW9BJVFc2uZzwJTTTAQxV0OOaDsckOnHMnQXKWKs/4GM7WMHZyzwlEayFWgzcANZz2AXcW6EheAL1EnyPY8jeg9WkqqwAzcRaC3IRsQFh7TPLaUYiXgWYG1fhZY4cnJAId5TzGbrt19G9jQbBoIF14g4yz2viFgM3lG7nM0uHarVyg8y2ik+9Vbfd/4dGN75rce3d/ibw90EsrrykjvAIvk3OMNcCQ4MczQqRtzY/Y7ikdimSy+G2E4Y65dEHPRE+uAc+iolAAcbtX7ckZj+be3uNRqvlNVveRnxuw8ogoiwb9tDEK63L55pW+LNT+1E7Do+q96eHu8fbxmudV53SFWhDKfarbiX5ULiN0GrYl2BR88gp9ewwEv4pTAdqBHJf2ihi2YAgDKx+yyNDglyAiQkJvDYwMlXSG0BCpN6CljTEnxIUXPObucOK07upxjElpBG/nOPEW/qw6AOSfMZyUnRsSotOpZdC0uRTmniQ2bcG1XjLiiGXI/qirGFyf8Zc8qwtc62muahNS1LSOKT2GiYj9H0tcoIYZ31Ke48BGfFpcj8Eqowa2fiKR1REQrywN7R6MKDbCOPc3tNizPWUcOcvWo/7IwJZ5FjdditbQ0DuehVvp+LR2iuSztFmnVlK8JY6GdPSl0OYQKTiMUgkj+QSvxZDnx1TS2uZVeBDd+UjRevGkF0b2nomqMVe1rE1IFP6ANVZeeKVZ4tnbV5ORFymLT8U8p5xeWeJM0WBpHWHP/Zo2Rd/yeRVKul/hYYGPqKZ2QxpdyJN3t4DeMRGpPxRKsL8H5cmnT+BCAAA" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Test Execution ID" sap:VirtualizedContainerService.HintSize="416,206" sap2010:WorkflowViewState.IdRef="ConnectorActivity_4" UiPathActivityTypeId="5abe4229-40c4-3b11-8bcc-5e98158254b3">
+        <isactr:ConnectorActivity.FieldObjects>
+          <isactr:FieldObject Name="projectId" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="Jit_ApiV2TestexecutionsWithstats" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="uiascb2:ApiV2TestexecutionsWithstats[]">[List_TestExecution]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="top" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int32" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="testsetId" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">[TestSetID]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="orderby" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">created desc</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="search" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">[in_TestExecutionName]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+        </isactr:ConnectorActivity.FieldObjects>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </isactr:ConnectorActivity>
+    </Sequence>
+    <Sequence DisplayName="Find First Completed Test Execution" sap:VirtualizedContainerService.HintSize="693,1534" sap2010:WorkflowViewState.IdRef="Sequence_83">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="No_of_TestExecutions" />
         <Variable x:TypeArguments="x:Boolean" Name="TestExecutionExists" />
@@ -447,7 +476,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Intialize Test Execution Counters" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+      <ui:MultipleAssign DisplayName="Intialize Test Execution Counters" sap:VirtualizedContainerService.HintSize="506,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_29">
@@ -477,21 +506,21 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[TestExecutionCounter &lt; No_of_TestExecutions]" DisplayName="Iterate through Returned Test Executions" sap:VirtualizedContainerService.HintSize="479,369" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[TestExecutionCounter &lt; No_of_TestExecutions]" DisplayName="Iterate through Returned Test Executions" sap:VirtualizedContainerService.HintSize="506,706" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
         <ui:InterruptibleDoWhile.Body>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,239" sap2010:WorkflowViewState.IdRef="Sequence_84">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="504,576" sap2010:WorkflowViewState.IdRef="Sequence_84">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[List_TestExecution(0).data(TestExecutionCounter).status = &quot;Finished&quot;]" DisplayName="Check for Finished Test Execution" sap:VirtualizedContainerService.HintSize="418,179" sap2010:WorkflowViewState.IdRef="If_10">
+            <If Condition="[List_TestExecution(0).data(TestExecutionCounter).status = &quot;Finished&quot;]" DisplayName="Check for Finished Test Execution" sap:VirtualizedContainerService.HintSize="470,516" sap2010:WorkflowViewState.IdRef="If_10">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,222" sap2010:WorkflowViewState.IdRef="Sequence_88">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Assign DisplayName="Test Execution exists!" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_18">
@@ -506,11 +535,11 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_87">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Assign DisplayName="Increment Counter" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_17">
@@ -533,11 +562,11 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InterruptibleDoWhile>
-      <If Condition="[TestExecutionExists]" DisplayName="Check if Valid test executions exists" sap:VirtualizedContainerService.HintSize="479,48" sap2010:WorkflowViewState.IdRef="If_9">
+      <If Condition="[TestExecutionExists]" DisplayName="Check if Valid test executions exists" sap:VirtualizedContainerService.HintSize="506,526" sap2010:WorkflowViewState.IdRef="If_9">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
@@ -648,37 +677,45 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </p:WordApplicationScope>
-    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq1W64/SQBD/V5r9pEnl0fN1JPdBOPTQO6lSTxNjzFLm6MqyW/eBVwn/u7NtKXDl8IHhAzCzM/Ob9yzJSwZ8ontSGMoEKNJZkhFQFSd0zKFgks7nLz65oPqDYDcMJlGWAhKNsuCTgUitqd4tyVs6B9IhCdURaNOjGohPzplOOc1KHmryDDK9uOSCjhVLDZMCuVEC3q60s4eMsZQcqEDCSCozVBOHtu0XHlzKmJYK3llQGb4a6CswiZyEVKFd4147yCu/AikFz15SxmFSwzhElndT8WoId0QPAQyOAuh0jLM6ug29jqzilbC0UUxMd1Gd3I9qKHpULOgmwb9FmSr5DWIzqEcxLDge2x/EbcEDYB/75D18t0xhsEtQd8GH1CR/FFEF2nKja0jfb+g1mBuZAyCfHJNnnXdcDVTRiHsxVRIHID09CtKMpXVAJbEOp2CUYJgwMEWdO2ieHYPGlNPgUk4HOGju4orW08TjcorVtj+PNSUHYvf8WLT9W4itk9zTFjlcWD+4rzvqWg7gPf2PPWJkPfNRQauDlL/Le7v196HEdTO0Zu9iec3M1xcpuw5cEF3KMeP5sqjiGe3GLaTTPfP931TsuL/x+wNzsW0MnPsq93EEasFiaLyIDVsww0A3Rh/7whQ/e6en3W6/H/T6wT/40uhaMeGo+68lfW+f5cZp+POVbvPpp6dv2/SE3jwLhbxITnzvGpRG6bN2o+U+KI5z0Co4E2CNotz3QjvmLH4DWSRnIM6E5ZwUlYjmSeeGco2ViMM1lQJ3+T2VWeQ6rwdMb87d2j54l6wVbLFWX1Y+2T5IenKeokK8WjaniTZUxFBVFxbSkpROodncLbSKx4/ANSQV+oHk2Goj548sG1Mxwy/UmrhenFNBi+ous5qV6e9ZTHpeIMOx22fHlNiFMWnRE6jhFZhuhp2PnrpocfYTJmvbpRF84uXjxA02DyebNzh3LtE4AQyxnNn0mnLMBrq+WtO7Sv7QoAYG5iU9VGxOVYYBKK+9kMYzhLQdrPbjRuvRGAxtBK3gSSvA/8F29EpERTMUoK6KkHkPzmGBIUjnIBxcQYV5uC26Y+YkT0oRyv/QtMfnZJhC0dX5nYDDF52ppaofISkfsR3SXATNZXXcrJquetYG8z+VxebyzpRfNdPS6iUVU4u/UR+4m/KK3jpAIywCvCpbOFXxju4qoDNcBr0EX7sklx0Xwa3pchnP8nSufgH+VM/j5wsAAA==" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Test Case Log ID" sap:VirtualizedContainerService.HintSize="693,266" sap2010:WorkflowViewState.IdRef="ConnectorActivity_5" UiPathActivityTypeId="6dfc5df8-cf2c-3cd3-b4fa-7f2bbaf9e9d4">
-      <isactr:ConnectorActivity.FieldObjects>
-        <isactr:FieldObject Name="projectId" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="testExecutionId" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String">[TestExecutionID]</InArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="Jit_ApiV2TestcaselogsTestexecutionTestExecutionIdPaged" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <OutArgument x:TypeArguments="uiascb3:ApiV2TestcaselogsTestexecutionTestExecutionIdPaged">[List_TestCaseLog]</OutArgument>
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-        <isactr:FieldObject Name="orderby" Type="FieldArgument">
-          <isactr:FieldObject.Value>
-            <InArgument x:TypeArguments="x:String" />
-          </isactr:FieldObject.Value>
-        </isactr:FieldObject>
-      </isactr:ConnectorActivity.FieldObjects>
-    </isactr:ConnectorActivity>
-    <p:WordApplicationScope SensitivityLabel="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Edit Test Report Template" FilePath="Test Report Templates\Temp Output (Word).docx" sap:VirtualizedContainerService.HintSize="693,12759" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3" SensitivityOperation="None">
+    <Sequence sap2010:Annotation.AnnotationText="API EndPoint - {BaseURL}/v2/{projectId}/testcaselogs/testexecution/{testExecutionId}/paged&#xA;Input Parameters - Project ID (ProjectID), Test Execution ID (TestExecutionID)&#xA;Output Parameters - List of Test Case Logs (List_TestCaseLog)" DisplayName="Get Test Case Log ID" sap:VirtualizedContainerService.HintSize="693,421" sap2010:WorkflowViewState.IdRef="Sequence_113">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACq1WW2/aShD+K9Y+nUouF6eXE6Q8FJc2nJMUNzhppaqqFjPBe1h23b1w4iL+e2dtx0BM6IWKB2BmZ+abby67K/KGAZ/qUApDmQBFeisyBqqSlE44lErS+/TZJ+dUXwt2y2Aa5xmg0CgLPhmKzJr63Iq8owsgPZJSHYM2IdVAfPKa6YzTvNKhJ8+g0ksqLehEscwwKVAbp+DtWrt4qJhIyYEKFIylMiM1dWi7fpnBhUxo5eC9BZXjqaG+BJPKaUQVxjXutIO89muQUvD8DWUcpg2MI1R5t7WugXDH9BDA4CiAzsckb6LbyJvIal0FSxvFxGwX1cnjqEYipGJJNwX+IcpMyf8gMcMmi1Gp8dh+ErcND4B95pMr+GqZQrIrUA/BR9SkP8WoAm250Q2kVxt5A+bG5gDI58fUWRcT1wBVDuJeTLXFAUgvjoI0Z1kTUCVswikVFRgmDMzQ5w6al8egMdU2uJCzIS6ah7ji+23icTnDbttfx4aTA9z9fSzawR0k1lnuGYsCLtwfeGw6ml4O4D39gzNiZLPycSlrgpQ/qnu38+tU4nUzsmbvxfIPM19eZewmcCS6kmPFi8ui5jPe5S2isz37/fdc7KS/yfuaOW5bQ5e+KnIcg1qyBFqvEsOWzDDQrfGHgTDlz/D0tN8fDIJwEPxGLq2+FVOOvn/Z0vf2RW6dRt/e6i6ffXzxrktP6O3LSMjz9MT3bkBptD7rtjrug+a4B62CMwHWKMp9L7ITzpJ/IY/lHMSZsJyTshMxPOndUq6xE3G5ZlLgXf5IZ5a1LvoBy1tot24ffJfcO9hSrT+vfbL9IAnlIkOH+GrZPE20oSKBuruwkVakSgrDFmlhVHz8CLyGpMI8UJxYbeTiqWUTKub4hV5TN4sLKmjZ3VVV86r8ocWiFw0ymrj77JgWOzcmK2cCPbwF089x8jHTkCYpIGdybrMbypFezKWW95X8X4MaGlhU8kixBVU5ZlQ93yKazDHGdvbdZ63O0wkY2go6wfNOgP+DbTqqPMru9oqldVly4P31GpaYU7YAYVAjqDBPtk13wpwULJfc/IEpPJ7kUQblmBYXP25TTKbB/SBGUbEze6S9DNqr+rWybrt2uA9Y/KkjtlcP1va6nVVRL6iYWfyN/sA9Ei/pnQM0Zt9QFHRwTeLDuK+AznG7hymedkWuRiiGO9PnMpkX5Vx/B44Obwe4CwAA" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Test Case Log ID" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="ConnectorActivity_5" UiPathActivityTypeId="6dfc5df8-cf2c-3cd3-b4fa-7f2bbaf9e9d4">
+        <isactr:ConnectorActivity.FieldObjects>
+          <isactr:FieldObject Name="projectId" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="testExecutionId" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">[TestExecutionID]</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="Jit_ApiV2TestcaselogsTestexecutionTestExecutionIdPaged" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="uiascb3:ApiV2TestcaselogsTestexecutionTestExecutionIdPaged">[List_TestCaseLog]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="orderby" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String" />
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+        </isactr:ConnectorActivity.FieldObjects>
+      </isactr:ConnectorActivity>
+    </Sequence>
+    <p:WordApplicationScope SensitivityLabel="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Edit Test Report Template" FilePath="Test Report Templates\Temp Output (Word).docx" sap:VirtualizedContainerService.HintSize="693,15673" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3" SensitivityOperation="None">
       <p:WordApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WordDocument">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="691,12638" sap2010:WorkflowViewState.IdRef="Sequence_56">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="691,15552" sap2010:WorkflowViewState.IdRef="Sequence_56">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -709,11 +746,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:WordSetBookmarkContent>
-            <If Condition="[TestExecutionStatus = &quot;Passed&quot;]" DisplayName="Set Test Execution Status" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[TestExecutionStatus = &quot;Passed&quot;]" DisplayName="Set Test Execution Status" sap:VirtualizedContainerService.HintSize="657,586" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
@@ -785,9 +822,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </p:WordSetBookmarkContent>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[count&lt;List_TestCaseLog.data.Count]" DisplayName="Iterate through list of Test Cases" sap:VirtualizedContainerService.HintSize="657,8935" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[count&lt;List_TestCaseLog.data.Count]" DisplayName="Iterate through list of Test Cases" sap:VirtualizedContainerService.HintSize="657,11320" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="655,8805" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="655,11190" sap2010:WorkflowViewState.IdRef="Sequence_55">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -801,31 +838,39 @@
                       <InArgument x:TypeArguments="x:String">[List_TestCaseLog.data(count).id]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACqVV328aMQz+V0552qTrAdetUpH6UChb2cqgQNuHqZpCzoWMkFwTh5Yh/vf5fkBB0K7SxAPEsR1/32ebJfsiQSWuaTRyqcGy+pINgFsx4SMFxSWr/7wP2SV3N1o+SEiGixTIiNZDyNo69bjxW7IffAaszmTCQnYhXar4ojS1cxM4YWWK0mgyDScQ5J5ZSjo7tFKP6TwwFrs2yeqphawPj15aSNZv5s9dGcHLND2OEwpquw7gxCQ9bulFzIIz/1X4UpUWyidw7hzYLNbtF1l4BHzHZb/oA4lKDCNjFHC9CyLOk8gxxS9Zzzi5rtzKGbcLtvo3yGsP5PgelKk1v0FgwfcOul5xU3C+j2o78A1Fjv9bEWqnrseDjfNN4q/zVN7GQ3AouANlxu4AlFd8djC9wLiRWUVRWyOMbV7kAOxcCojOBco5yQEuGty1NBY/m6enjUarFTdb8aFqoobXiaLg/aswOBQb3XWexPjTte7CVW0x7/o07jy2LlUcBrdgHdVzVouq2YfivUJv4UyDR8tVGPT8SEnxHRZDMwV9pr1SrJCAXmb1B64cSdAHl1IjwmuSFITnohDH+e1mhl2Hhn+dYOtqdU+NuT31TTNLKSGthpf5d8i1gI3EpOaSlaDo2RwWvUobRlNvGUs4yCy8QzM78nLE9ZS+KOsECc6Maz6mPglZKcyiVLDpSTdqOOqcUdakb7bBJWJadB65fAVsLMhMUDI6lPwDyTp5mYVcgs0sB239YLKKuZgAMWimPr3lisgmZKu1vWHNEwW0EWalvZxlwlduzB4XUwKzzUXtJKoejQB5FFfjz9WT6nFU2yanrKdo1yDDFXQKRoIPFzAnhOkMNNKN5ho/bofuPHOcc14w9Z65eQen3RSKySGPPtBaoHL2qG4NyZQPf51V5nFluVkpq0om7zpjZSmTFblecT32BI/cIVuZHf7co+OANKKlWa3mfzsNC3xKW6g5Ie9MhbLjh/CMDWXENOd79ReDz/y6zAYAAA==" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Assertion Info" sap:VirtualizedContainerService.HintSize="621,297" sap2010:WorkflowViewState.IdRef="ConnectorActivity_7" UiPathActivityTypeId="d020d9b0-b505-3c31-8dc8-16bb4f631e43">
-                    <isactr:ConnectorActivity.FieldObjects>
-                      <isactr:FieldObject Name="id" Type="FieldArgument">
-                        <isactr:FieldObject.Value>
-                          <InArgument x:TypeArguments="x:String">[TestCaseLogID]</InArgument>
-                        </isactr:FieldObject.Value>
-                      </isactr:FieldObject>
-                      <isactr:FieldObject Name="includeAssertions" Type="FieldArgument">
-                        <isactr:FieldObject.Value>
-                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                        </isactr:FieldObject.Value>
-                      </isactr:FieldObject>
-                      <isactr:FieldObject Name="projectId" Type="FieldArgument">
-                        <isactr:FieldObject.Value>
-                          <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
-                        </isactr:FieldObject.Value>
-                      </isactr:FieldObject>
-                      <isactr:FieldObject Name="Jit_ApiV2TestcaselogsId" Type="FieldArgument">
-                        <isactr:FieldObject.Value>
-                          <OutArgument x:TypeArguments="uiascb4:ApiV2TestcaselogsId">[List_TestAssertion]</OutArgument>
-                        </isactr:FieldObject.Value>
-                      </isactr:FieldObject>
-                    </isactr:ConnectorActivity.FieldObjects>
-                  </isactr:ConnectorActivity>
-                  <If Condition="[count&lt;&gt;0]" DisplayName="Check for multiple Test Cases" sap:VirtualizedContainerService.HintSize="621,391" sap2010:WorkflowViewState.IdRef="If_2">
+                  <Sequence sap2010:Annotation.AnnotationText="API EndPoint - {BaseURL}/v2/{projectId}/testcaselogs/{id}&#xA;Input Parameters - Project ID (ProjectID), Test Case Log ID (TestCaseLogID)&#xA;    &gt; Include Assertions (True)&#xA;Output Parameters - List of Test Assertions (List_TestAssertion)" DisplayName="Get Assertion Info" sap:VirtualizedContainerService.HintSize="621,441" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACqVV224aMRD9lZWfWmmzwKaNFKQ8BEIb2lAIkOShiirjnYCLsTf2mIQi/r2zFwgIkkaqeACP53LOnBmzZF8kqMQ1jUYuNVhWX7IBcCsmfKSguGT1n/chu+TuRssHCclwkQIZ0XoIWVunHjd+S/aDz4DVmUxYyC6kSxVflKZ2bgInrExRGk2m4QSC3DNLSWeHVuoxnQfGYtcmGZ5ayPrw6KWFZF0zL3dlBC/T9DhOKKjtOoATk/S4pYqYBWf+q/AFlRbKJ3DuHNgs1u2DLDwCvuOyD/pAopLDyBgFXO+SiPMkckzxS9YzTq6RWznjdsFW/yZ57YEc38MyteY3CCz6vcOuV9wUPd9ntR34hiLH/60IjVPX48HB+Sbx13kqb+MhOBTcgTJjd4DKKz47nF5o3MgMUdTWCGObgxyAnUsB0blAOSc5wEWDu5bG4mfz9LTRaLXiZis+hCZqeJ0oCt6/CoNDsdFd50mMP13rLlzVFvOuT+POY+tSxWFwC9YRnrNaVM0+FO8VegtnGjxarsKg50dKiu+wGJop6DPtlWKFBFSZ1R+4ciRBH1xKgwivSVI0PBeFepzfbnbYdWj51wm2rlb3NJjbW980s5QS0tPwsv8OuRawkZjUXLKSFJXNaVFVemE0zZaxxIPMwjs0syMvR1xP6YuyTpDozLjmY5qTkJXCLEoFm550o4GjyRllQ/rmGFwipsXkkctXwMaCzESlycUEqClm6tNbrqh/BHZjb1jzRPvcRpiV9nI9CXL5CPa4mBK+bXq1k6h6NALkUVyNP1dPqsdRbZtvCbSYwCCDGnQKksGHC5gT6HQGGulGc40ft0N3yhznbSzIv2cV3tGmbgrFMpBHH2jTCc5e91pDMuX7XGeVeVxZbl6JVSVTbJ2xspTJilyvuB57okfukL2CHf7co+NA/iFTXK3m/yQNC3xKD0tzQt6ZCuUQD+EZG8qIad7v1V9mUHkZnwYAAA==" ConnectionId="386d13b8-3ca6-435b-a60f-1299bbee2ce2" DisplayName="Get Assertion Info" sap:VirtualizedContainerService.HintSize="416,277" sap2010:WorkflowViewState.IdRef="ConnectorActivity_7" UiPathActivityTypeId="d020d9b0-b505-3c31-8dc8-16bb4f631e43">
+                      <isactr:ConnectorActivity.FieldObjects>
+                        <isactr:FieldObject Name="id" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">[TestCaseLogID]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="includeAssertions" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="projectId" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">[ProjectID]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="Jit_ApiV2TestcaselogsId" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <OutArgument x:TypeArguments="uiascb4:ApiV2TestcaselogsId">[List_TestAssertion]</OutArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                      </isactr:ConnectorActivity.FieldObjects>
+                    </isactr:ConnectorActivity>
+                  </Sequence>
+                  <If Condition="[count&lt;&gt;0]" DisplayName="Check for multiple Test Cases" sap:VirtualizedContainerService.HintSize="621,455" sap2010:WorkflowViewState.IdRef="If_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -847,11 +892,11 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_61">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Sequence>
@@ -929,22 +974,22 @@
                   </ui:MultipleAssign>
                   <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="621,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" Replace="[TestCaseName]" ReplaceAll="False" Search="Test Case Name" />
                   <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="621,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[TestCaseAutomationName]" ReplaceAll="False" Search="Test Case Automation" />
-                  <Switch x:TypeArguments="x:String" DisplayName="Update Test Case Status" Expression="[TestCaseStatus]" sap:VirtualizedContainerService.HintSize="621,392" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                  <Switch x:TypeArguments="x:String" DisplayName="Update Test Case Status" Expression="[TestCaseStatus]" sap:VirtualizedContainerService.HintSize="621,2505" sap2010:WorkflowViewState.IdRef="Switch`1_2">
                     <Switch.Default>
-                      <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                      <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_97">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Sequence>
                     </Switch.Default>
-                    <Sequence x:Key="Passed" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                    <Sequence x:Key="Passed" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,708" sap2010:WorkflowViewState.IdRef="Sequence_98">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" Replace="Passed" ReplaceAll="False" Search="&lt;tc passed status&gt;" />
@@ -963,22 +1008,22 @@
                         </p:WordReplaceText.Replace>
                       </p:WordReplaceText>
                     </Sequence>
-                    <Sequence x:Key="Failed" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_99">
+                    <Sequence x:Key="Failed" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,708" sap2010:WorkflowViewState.IdRef="Sequence_99">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,222.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_16" ReplaceAll="False" Search="&lt;tc passed status&gt;">
+                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_16" ReplaceAll="False" Search="&lt;tc passed status&gt;">
                         <p:WordReplaceText.Replace>
                           <InArgument x:TypeArguments="x:String">
                             <Literal x:TypeArguments="x:String" Value="" />
                           </InArgument>
                         </p:WordReplaceText.Replace>
                       </p:WordReplaceText>
-                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,222.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_17" Replace="Failed" ReplaceAll="False" Search="&lt;tc failed status&gt;" />
-                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,214" sap2010:WorkflowViewState.IdRef="WordReplaceText_18" ReplaceAll="False" Search="&lt;tc not executed&gt;">
+                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_17" Replace="Failed" ReplaceAll="False" Search="&lt;tc failed status&gt;" />
+                      <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,210" sap2010:WorkflowViewState.IdRef="WordReplaceText_18" ReplaceAll="False" Search="&lt;tc not executed&gt;">
                         <p:WordReplaceText.Replace>
                           <InArgument x:TypeArguments="x:String">
                             <Literal x:TypeArguments="x:String" Value="" />
@@ -986,11 +1031,11 @@
                         </p:WordReplaceText.Replace>
                       </p:WordReplaceText>
                     </Sequence>
-                    <Sequence x:Key="None" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_100">
+                    <Sequence x:Key="None" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,708" sap2010:WorkflowViewState.IdRef="Sequence_100">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="382,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_19" ReplaceAll="False" Search="&lt;tc passed status&gt;">
@@ -1014,7 +1059,7 @@
                   <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="621,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" Replace="[TestCaseEndDate]" ReplaceAll="False" Search="&lt;End Date&gt;" />
                   <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="621,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_6" Replace="[TestCaseRobotUser]" ReplaceAll="False" Search="&lt;Robot User&gt;" />
                   <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="621,219" sap2010:WorkflowViewState.IdRef="WordReplaceText_7" Replace="[TestCaseRobotMachine]" ReplaceAll="False" Search="&lt;Robot Machine&gt;" />
-                  <If Condition="[List_TestAssertion Is Nothing OrElse List_TestAssertion.assertions Is Nothing]" sap:VirtualizedContainerService.HintSize="621,5872" sap2010:WorkflowViewState.IdRef="If_11">
+                  <If Condition="[List_TestAssertion Is Nothing OrElse List_TestAssertion.assertions Is Nothing]" sap:VirtualizedContainerService.HintSize="621,5936" sap2010:WorkflowViewState.IdRef="If_11">
                     <If.Then>
                       <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="619,228" sap2010:WorkflowViewState.IdRef="Sequence_90">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1030,13 +1075,13 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="619,5515" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="619,5579" sap2010:WorkflowViewState.IdRef="Sequence_91">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Populate Assertions Table" sap:VirtualizedContainerService.HintSize="585,5455" sap2010:WorkflowViewState.IdRef="Sequence_92">
+                        <Sequence DisplayName="Populate Assertions Table" sap:VirtualizedContainerService.HintSize="585,5519" sap2010:WorkflowViewState.IdRef="Sequence_92">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1056,9 +1101,9 @@
                               <InArgument x:TypeArguments="x:Int32">0</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[assertionCount &lt; List_TestAssertion.assertions.Count]" DisplayName="Iterate through list of Assertions" sap:VirtualizedContainerService.HintSize="551,5081" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[assertionCount &lt; List_TestAssertion.assertions.Count]" DisplayName="Iterate through list of Assertions" sap:VirtualizedContainerService.HintSize="551,5145" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                             <ui:InterruptibleDoWhile.Body>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="549,4960" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="549,5024" sap2010:WorkflowViewState.IdRef="Sequence_63">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="timestamp" />
                                   <Variable x:TypeArguments="x:String" Name="description" />
@@ -1071,7 +1116,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[assertionCount &lt;&gt;0]" sap:VirtualizedContainerService.HintSize="515,391" sap2010:WorkflowViewState.IdRef="If_3">
+                                <If Condition="[assertionCount &lt;&gt;0]" sap:VirtualizedContainerService.HintSize="515,455" sap2010:WorkflowViewState.IdRef="If_3">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1093,11 +1138,11 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_65">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Sequence>
@@ -1127,6 +1172,12 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="481,628" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                     <TryCatch.Try>
                                       <ui:MultipleAssign DisplayName="Parse Description" sap:VirtualizedContainerService.HintSize="479,178" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
                                         <ui:MultipleAssign.AssignOperations>
