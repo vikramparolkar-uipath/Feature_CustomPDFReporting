@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="HTTPRequest_DownloadAssertionScreenshot" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_projectID="cdae62c6-406d-0000-98b4-0b46b178ebc3" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_baseURL="https://staging.uipath.com/uibank/DevelopmentTenant/testmanager_/api" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_authtoken="eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4Nzc0M0MxRjZDQzk5Q0Q4QkM1Q0Y2QkFBMkI1NTE1QTAyNEY3QTIiLCJ4NXQiOiJHSGREd2ZiTW1jMkx4YzlycWl0VkZhQWs5NkkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3N0YWdpbmcudWlwYXRoLmNvbS9pZGVudGl0eV8iLCJuYmYiOjE3NTMyMTUyNzIsImlhdCI6MTc1MzIxNTU3MiwiZXhwIjoxNzUzMjE5MTcyLCJhdWQiOiJUZXN0TWFuYWdlciIsInNjb3BlIjpbIlRNLkN1c3RvbUZpZWxkRGVmaW5pdGlvbnMuUmVhZCIsIlRNLkN1c3RvbUZpZWxkVmFsdWVzLlJlYWQiLCJUTS5Qcm9qZWN0cy5SZWFkIiwiVE0uVGVzdENhc2VzIiwiVE0uVGVzdEV4ZWN1dGlvbnMiLCJUTS5UZXN0U2V0cyJdLCJzdWJfdHlwZSI6InNlcnZpY2UuZXh0ZXJuYWwiLCJwcnRfaWQiOiI5ZjAxYTNlYS00MjVjLTQzZTYtOTgwMi0zOWIwZmQ0ZmExMTkiLCJjbGllbnRfaWQiOiJiZTUxOGVjZS04NDIyLTRhMWQtYWU5YS01MmFiNDBiYjViNmIiLCJqdGkiOiI1NTQ5Q0FENDM2OUFFRjFGQTU0MUVBRjBFQzJFNTcxQSJ9.iwCCCepNZMOYdy4uZml3bGj9UOPKsZ-Urk1xN9KjukpGgRBX16riVtGa1EmdmB8hAGkalRa2nf3g4M6XOjiKD7WXgWkv91lYR6NSk8JzLwErVFZkOwWJTtb9kfx4dZpFUEPC9qtgM25L5Ex108OrMdAxqYLwmKy0xjf8BuM8d26AhsYZFhq-pn3VFhHVfj_CXFUKlpN2HaFHJNXH9bk45jo6MaYE2LGJNFFk0_Fuh4QaaKReDqtJNupMY3XEE0GxYiug8eS3S-F56euHgunSnDTgCYCD0giN1nUMjiMSELG9baJ6lWeL_Zo_TdlTSCDoSQ3s3N4NuFro1ZDiavrTIA" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_TestExecutionID="46b61434-9914-2700-e315-0b487d7f5d0f" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="HTTPRequest_DownloadAssertionScreenshot" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_projectID="cdae62c6-406d-0000-98b4-0b46b178ebc3" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_baseURL="https://staging.uipath.com/uibank/DevelopmentTenant/testmanager_/api" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_authtoken="eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4Nzc0M0MxRjZDQzk5Q0Q4QkM1Q0Y2QkFBMkI1NTE1QTAyNEY3QTIiLCJ4NXQiOiJHSGREd2ZiTW1jMkx4YzlycWl0VkZhQWs5NkkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3N0YWdpbmcudWlwYXRoLmNvbS9pZGVudGl0eV8iLCJuYmYiOjE3NTMyMTUyNzIsImlhdCI6MTc1MzIxNTU3MiwiZXhwIjoxNzUzMjE5MTcyLCJhdWQiOiJUZXN0TWFuYWdlciIsInNjb3BlIjpbIlRNLkN1c3RvbUZpZWxkRGVmaW5pdGlvbnMuUmVhZCIsIlRNLkN1c3RvbUZpZWxkVmFsdWVzLlJlYWQiLCJUTS5Qcm9qZWN0cy5SZWFkIiwiVE0uVGVzdENhc2VzIiwiVE0uVGVzdEV4ZWN1dGlvbnMiLCJUTS5UZXN0U2V0cyJdLCJzdWJfdHlwZSI6InNlcnZpY2UuZXh0ZXJuYWwiLCJwcnRfaWQiOiI5ZjAxYTNlYS00MjVjLTQzZTYtOTgwMi0zOWIwZmQ0ZmExMTkiLCJjbGllbnRfaWQiOiJiZTUxOGVjZS04NDIyLTRhMWQtYWU5YS01MmFiNDBiYjViNmIiLCJqdGkiOiI1NTQ5Q0FENDM2OUFFRjFGQTU0MUVBRjBFQzJFNTcxQSJ9.iwCCCepNZMOYdy4uZml3bGj9UOPKsZ-Urk1xN9KjukpGgRBX16riVtGa1EmdmB8hAGkalRa2nf3g4M6XOjiKD7WXgWkv91lYR6NSk8JzLwErVFZkOwWJTtb9kfx4dZpFUEPC9qtgM25L5Ex108OrMdAxqYLwmKy0xjf8BuM8d26AhsYZFhq-pn3VFhHVfj_CXFUKlpN2HaFHJNXH9bk45jo6MaYE2LGJNFFk0_Fuh4QaaKReDqtJNupMY3XEE0GxYiug8eS3S-F56euHgunSnDTgCYCD0giN1nUMjiMSELG9baJ6lWeL_Zo_TdlTSCDoSQ3s3N4NuFro1ZDiavrTIA" this:HTTPRequest_DownloadAssertionScreenshot.in_TM_TestExecutionID="46b61434-9914-2700-e315-0b487d7f5d0f" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_TM_projectID" Type="InArgument(x:String)" />
     <x:Property Name="in_TM_baseURL" Type="InArgument(x:String)" />
@@ -116,7 +116,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HTTPRequest_DownloadAssertionScreenshot" sap:VirtualizedContainerService.HintSize="668.8000000000001,1685.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HTTPRequest_DownloadAssertionScreenshot" sap:VirtualizedContainerService.HintSize="1056,1438" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="APIOut" />
       <Variable x:TypeArguments="x:Int32" Name="Status" />
@@ -129,13 +129,14 @@
       <Variable x:TypeArguments="x:String" Name="TM_tenantName" />
       <Variable x:TypeArguments="x:String" Name="TM_baseURL" />
       <Variable x:TypeArguments="x:String" Name="BearerToken" />
+      <Variable x:TypeArguments="upr:ILocalResource" Name="Output" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Assign API Authentication Variables" sap:VirtualizedContainerService.HintSize="479.6,336.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Assign API Authentication Variables" sap:VirtualizedContainerService.HintSize="522,334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -197,7 +198,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HTTPRequest_GetAuthToken - Invoke Workflow File (Helper Workflows\WIP Improvements\HTTPRequest_GetAuthToken.xaml)" sap:VirtualizedContainerService.HintSize="479.6,177.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Helper Workflows\WIP Improvements\HTTPRequest_GetAuthToken.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HTTPRequest_GetAuthToken - Invoke Workflow File (Helper Workflows\WIP Improvements\HTTPRequest_GetAuthToken.xaml)" sap:VirtualizedContainerService.HintSize="522,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Helper Workflows\HTTP Request Workflows\HTTPRequest_GetAuthToken.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="API_endpoint_auth">[TM_siteName+"/identity_/connect/token"]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_ExternalApp_ClientID">[ExternalApp_ClientID]</InArgument>
@@ -206,7 +207,7 @@
         <OutArgument x:TypeArguments="x:String" x:Key="out_TM_token">[BearerToken]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <Assign DisplayName="HTTP Request Endpoint - Get Assertion Screenshots" sap:VirtualizedContainerService.HintSize="479.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign DisplayName="HTTP Request Endpoint - Get Assertion Screenshots" sap:VirtualizedContainerService.HintSize="522,114" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[API_endpoint_Assertion]</OutArgument>
       </Assign.To>
@@ -214,28 +215,7 @@
         <InArgument x:TypeArguments="x:String">[in_TM_baseURL+"/v2/"+in_TM_projectID+"/testcaselogs/"+in_TM_TestExecutionID+"/assertions"]</InArgument>
       </Assign.Value>
     </Assign>
-    <If Condition="[API_endpoint_Assertion = &quot;https://staging.uipath.com/uibank/DevelopmentTenant/testmanager_/api/v2/cdae62c6-406d-0000-98b4-0b46b178ebc3/testcaselogs/46b61434-9914-2700-e315-0b487d7f5d0f/assertions&quot;]" sap:VirtualizedContainerService.HintSize="479.6,399.2" sap2010:WorkflowViewState.IdRef="If_5">
-      <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,109.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;HI&quot;]" />
-        </Sequence>
-      </If.Then>
-      <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </Sequence>
-      </If.Else>
-    </If>
-    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request - Get Project ID" EnableSSLVerification="True" EndPoint="[API_endpoint_Assertion]" sap:VirtualizedContainerService.HintSize="479.6,103.2" sap2010:WorkflowViewState.IdRef="HttpClient_4" Method="GET" OAuth2Token="[BearerToken]" ResourcePath="C:\Users\vikram.parolkar\Downloads\Assertion1.jpg" Result="[APIOut]" StatusCode="[Status]" TimeoutMS="6000">
+    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request - Get Project ID" EnableSSLVerification="True" EndPoint="[API_endpoint_Assertion]" sap:VirtualizedContainerService.HintSize="522,102" sap2010:WorkflowViewState.IdRef="HttpClient_4" Method="GET" OAuth2Token="[BearerToken]" ResourcePath="C:\Users\vikram.parolkar\Downloads\Test" ResponseAttachment="[Output]" Result="[APIOut]" StatusCode="[Status]" TimeoutMS="6000">
       <ui:HttpClient.Attachments>
         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
       </ui:HttpClient.Attachments>
@@ -253,25 +233,36 @@
         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
       </ui:HttpClient.UrlSegments>
     </ui:HttpClient>
-    <If Condition="[Status = 200]" sap:VirtualizedContainerService.HintSize="479.6,531.6" sap2010:WorkflowViewState.IdRef="If_4">
+    <If Condition="[Status = 200]" sap:VirtualizedContainerService.HintSize="522,688" sap2010:WorkflowViewState.IdRef="If_4">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,335" sap2010:WorkflowViewState.IdRef="Sequence_9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="382,114.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[out_JSONout]" JsonString="[APIOut]" />
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,275" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[out_JSONout]" JsonString="[APIOut]" />
+              </Sequence>
+            </ui:CommentOut.Body>
+          </ui:CommentOut>
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,226.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="520,224" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,166.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Failed to get Test Case Assertion Info. Status: &quot;+Status.ToString]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Failed to get Test Case Assertion Info. Status: &quot;+Status.ToString]" />
         </Sequence>
       </If.Else>
     </If>
