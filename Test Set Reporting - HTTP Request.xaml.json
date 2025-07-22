@@ -1,0 +1,45 @@
+{
+  "DisplayName": "Test Set Reporting - HTTP Request",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_ProjectPrefix",
+      "DisplayName": "in_ProjectPrefix",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "DEV",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_TestSetName",
+      "DisplayName": "in_TestSetName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "TS_Regression",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_TestExecutionName",
+      "DisplayName": "in_TestExecutionName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
